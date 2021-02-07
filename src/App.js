@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './index.css'
+import React from 'react';
+import Box from "./Box";
+import {useState, useEffect , useCallback, useMemo, useRef} from "react";
+import useWebSocket, { ReadyState } from 'react-use-websocket';
+import WebSocketDemo from './WebSocketDemo'
+import fakeData from './fakeData'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [jsonData, setjsonData] = useState(fakeData);
+    const getMassage = (message) => {
+        // console.log('message1: ', message);
+        if (message != null )
+        setjsonData(message)
+    };
+
+    return (
+        <div className="container">
+            <WebSocketDemo setData={getMassage}></WebSocketDemo>
+            {
+                jsonData.map(item=>(
+                    <Box item={item[0]}></Box>
+                ))
+            }
+            d
+        </div>
+        // <WebSocketDemo></WebSocketDemo>
+
+    );
 }
 
 export default App;
