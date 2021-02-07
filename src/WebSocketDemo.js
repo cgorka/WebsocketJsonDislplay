@@ -2,7 +2,7 @@ import React, { useState, useCallback, useMemo, useRef } from 'react';
 import useWebSocket, { ReadyState } from 'react-use-websocket';
 
 const WebSocketDemo = (props) => {
-    const [socketUrl, setSocketUrl] = useState('ws://fake-websocket-data-generator.herokuapp.com');
+    const [socketUrl, setSocketUrl] = useState('wss://fake-websocket-data-generator.herokuapp.com');
     const messageHistory = useRef([]);
 
     const {
