@@ -19,12 +19,14 @@ function App() {
         <>
             <Navbar></Navbar>
             <WebSocketDemo setData={getMassage}></WebSocketDemo>
+            <div className="container">
             {
                 jsonData.map(item=>(
                     <Box item={item[0]}></Box>
                 ))
             }
-            d
+            </div>
+
         </>
         // <WebSocketDemo></WebSocketDemo>
 

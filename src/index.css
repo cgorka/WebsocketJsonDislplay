@@ -27,6 +27,9 @@ a {
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
 
 
 }
@@ -35,21 +38,21 @@ a {
   border-style: solid;
   border-color: #777;
   border-width: 1;
-  width: 400px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
 
   /*margin: 10px 10px;*/
   padding: 10px 10px;
   margin: 5px;
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
 
   transition:all 1s ease;
   /*animation-play-state: running;*/
   /*flex: 1;*/
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 
 }
 .box:hover{
