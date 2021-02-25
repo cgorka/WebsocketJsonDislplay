@@ -4,7 +4,7 @@ const Box = (props) => {
     // console.log('props: ', props);
     return (
         <div className="box" key={props.item.first_name}>
-            <img src={props.item.image+'?r='+props.item.id }  width="50" height="50"alt=""/>
+            {/*<img src={props.item.image+'?r='+props.item.id }  width="50" height="50"alt=""/>*/}
 
             <p class='id'> {props.item.id}</p>
             <p class='name'> {props.item.first_name}</p>
