@@ -1,6 +1,7 @@
 import './index.css'
 import React from 'react';
 import Box from "./Box";
+import Navbar from "./Navbar";
 import {useState, useEffect , useCallback, useMemo, useRef} from "react";
 import useWebSocket, { ReadyState } from 'react-use-websocket';
 import WebSocketDemo from './WebSocketDemo'
@@ -15,7 +16,8 @@ function App() {
     };
 
     return (
-        <div className="container">
+        <>
+            <Navbar></Navbar>
             <WebSocketDemo setData={getMassage}></WebSocketDemo>
             {
                 jsonData.map(item=>(
@@ -23,7 +25,7 @@ function App() {
                 ))
             }
             d
-        </div>
+        </>
         // <WebSocketDemo></WebSocketDemo>
 
     );
