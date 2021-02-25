@@ -44,22 +44,27 @@ a {
   border-style: solid;
   border-color: #777;
   border-width: 1px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 
   /*margin: 10px 10px;*/
   padding: 10px 10px;
   margin: 5px;
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   transition:all 1s ease;
   /*animation-play-state: running;*/
   /*flex: 1;*/
   /*flex-grow: 1;*/
 
+}
+.box .id{
+  /*color: red;*/
+  font-size: 8px;
+}.box .mass{
+  /*color: red;*/
+  /*font-size: 8px;*/
+  font-weight: bold;
 }
 .box:active{
   background-color: yellow;
