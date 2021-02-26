@@ -1,30 +1,33 @@
-import React, {PropTypes} from 'react'
+import React, { PropTypes } from "react";
 
 const Box = (props) => {
-    // console.log('props: ', props);
-    return (
-        <div className="box" key={props.item.first_name}>
-            {/*<img src={props.item.image+'?r='+props.item.id }  width="50" height="50"alt=""/>*/}
+  // console.log('props: ', props);
+  var sizeInPx = "200px";
+  if (props.size === "big") {
+    sizeInPx = "300px";
+  }
+  if (props.size === "small") {
+    sizeInPx = "100px";
+  }
 
-            {/*<p class='id'> {props.item.id}</p>*/}
-            <p class='name'> {props.item.first_name}</p>
-            <p class='product'> {props.item.genre}</p>
-            <p class='mass'> {props.item.mass}</p>
-            {/*<p className='mass'> </p>*/}
+  return (
+    <div
+      className="box"
+      key={props.item.first_name}
+      style={{ width: sizeInPx, height: sizeInPx }}
+    >
+      <p class="name"> {props.item.first_name}</p>
+      <p class="product"> {props.item.genre}</p>
+      <p class="mass"> {props.item.mass}</p>
+      {/*<p className='mass'> </p>*/}
 
-
-
-        {/*<p> {props.item.email}</p>*/}
-        </div>
-    );
+      {/*<p> {props.item.email}</p>*/}
+    </div>
+  );
 };
 
-Box.propTypes =
-{
-};
+Box.propTypes = {};
 
-Box.defaultProps =
-{
-};
+Box.defaultProps = {};
 
 export default Box;

@@ -1,5 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+  --first-color : #f9f7f7;
+  --second-color : #dbe2ef;
+  --third-color: #3f72af;
+}
+
+
 
 * {
   box-sizing: border-box;
@@ -11,7 +17,7 @@ body {
   font-family: 'lato', 'sans-serif';
   color: #333;
   line-height: 1.6;
-  background-color: lightsteelblue;
+  background-color: var(--first-color);
 }
 ul {
   list-style-type: none;
@@ -59,8 +65,15 @@ a {
   display: flex;
   flex-direction: column;
  justify-content: flex-end;
+  background-color: var(--second-color);
 
 }
+
+.overrideBoxBig {
+  width: 300px;
+  height: 300px;
+}
+
 .box p{
   /*border: 1px red solid;*/
 }
@@ -85,7 +98,8 @@ a {
 }
 .box:hover{
 cursor: pointer;
-  background:#53a7ea;
+  background-color: var(--third-color);
+  /*background:#53a7ea;*/
   /*flex-grow: 4.3;*/
   /*flex: 10*/
   /*height: 550px !important;*/
@@ -101,6 +115,8 @@ cursor: pointer;
   /*background-color: #047aed;*/
   color: #000;
   height: 70px;
+  margin-right: 100px;
+  /*padding-right: 50px;*/
 
 }
 .navbar ul{
@@ -109,10 +125,12 @@ cursor: pointer;
 .navbar a{
   color: #000;
   padding: 10px;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 .navbar a:hover{
-  border-bottom: 2px white solid;
+  border-bottom: 2px var(--third-color) solid;
+  /*border-bottom: 4px black solid;*/
+  /*background-color:var(--third-color) ;*/
 }
 .navbar .flex{
   justify-content: space-between;

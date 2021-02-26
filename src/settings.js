@@ -1,7 +1,7 @@
-const fakeData = [
+const settingsData = [
   [
     {
-      id: 0,
+      size: "small",
       // first_name: ".........",
       // last_name: "Kelvin Gutkowski II",
       // email: "Alfreda_Herzog@yahoo.com",
@@ -10,4 +10,4 @@ const fakeData = [
     },
   ],
 ];
-export default fakeData;
+export default settingsData;
