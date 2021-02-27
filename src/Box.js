@@ -16,7 +16,7 @@ const Box = (props) => {
     <div
       className="box"
 
-      style={{ width: sizeInPx, height: sizeInPx }}
+      // style={{ width: sizeInPx, height: sizeInPx }}
     >
       {/*<Hy10svg fill='red' stroke='white'/>*/}
 
@@ -29,7 +29,7 @@ const Box = (props) => {
       <p className="mass"> {props.item.mass}</p>
       {/*<p className='mass'> </p>*/}
 
-      {/*<p> {props.item.email}</p>*/}
+      <p className="name"> {props.item.id}</p>
     </div>
   );
 };

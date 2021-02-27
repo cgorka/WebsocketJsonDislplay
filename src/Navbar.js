@@ -10,19 +10,19 @@ const Navbar = (props) => {
             <li>
               <a href="index.html">Home</a>
             </li>
-            <li>
-              <a href="#" >
-                Big
-              </a>
-            </li>
-            <li>
-              <a href="#">Normal</a>
-            </li>
-            <li>
-              <a href="#" onClick={()=>console.log("clic4k")}>
-                Small
-              </a>
-            </li>
+            {/*<li>*/}
+            {/*  <a href="#" >*/}
+            {/*    Big*/}
+            {/*  </a>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <a href="#">Normal</a>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*  <a href="#" onClick={()=>console.log("clic4k")}>*/}
+            {/*    Small*/}
+            {/*  </a>*/}
+            {/*</li>*/}
             {/*<li>*/}
             {/*    <a href="features.html">Fatures</a>*/}
             {/*</li>*/}
