@@ -6,7 +6,7 @@ const Box = (props) => {
     return (
         <div className={boxClass}>
             <Hy10svg stroke={props.item.status}/>
-            <div className='test'><p className="mass"> {props.item.mass}</p>
+            <div className='details'><p className="mass"> {props.item.mass}</p>
                 <p className="name"> {props.item.first_name}</p>
                 <p className="product"> {props.item.genre}</p>
             </div>
