@@ -84,10 +84,17 @@ cursor: pointer;
   border-width: 5px;
   width: 400px;
   height: 400px;
+  justify-content: center;
+  align-items: center;
 /*background-color: grey;*/
 }
 
-
+.box:hover p{
+  /*font-style: italic;*/
+  /*color: red;*/
+  font-weight: bold;
+  font-size: 2rem;
+}
 
 
 .navbar{

@@ -20,10 +20,10 @@ const Box = (props) => {
     >
       {/*<Hy10svg fill='red' stroke='white'/>*/}
 
-      <div  style={{height:'50px',
-        width: '50px'}} className="size">
-        <Hy10svg stroke={props.item.status}/>
-      </div>
+      {/*<div  style={{height:'50px',*/}
+      {/*  width: '50px'}} className="size">*/}
+        <Hy10svg  stroke={props.item.status}/>
+      {/*</div>*/}
       <p className="name"> {props.item.first_name}</p>
       <p className="product"> {props.item.genre}</p>
       <p className="mass"> {props.item.mass}</p>
