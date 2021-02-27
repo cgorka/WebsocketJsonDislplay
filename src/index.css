@@ -132,7 +132,7 @@ p.id.small {
 
 
 .navbar {
-    /*color: white;*/
+    color: white;
     height: 70px;
     margin-right: 100px;
 }
@@ -142,13 +142,13 @@ p.id.small {
 }
 
 .navbar a {
-    /*color: white;*/
+    color: white;
     padding: 10px;
     margin: 10px 10px;
 }
 
 .navbar a:hover {
-    border-bottom: 4px #0C8BFC solid;
+    border-bottom: 4px white solid;
 }
 
 .navbar .flex {
