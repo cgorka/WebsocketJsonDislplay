@@ -15,14 +15,14 @@ const Navbar = (props) => {
             {/*    Big*/}
             {/*  </a>*/}
             {/*</li>*/}
-            {/*<li>*/}
-            {/*  <a href="#">Normal</a>*/}
-            {/*</li>*/}
-            {/*<li>*/}
-            {/*  <a href="#" onClick={()=>console.log("clic4k")}>*/}
-            {/*    Small*/}
-            {/*  </a>*/}
-            {/*</li>*/}
+            <li>
+              <a href="#" onClick={()=>props.setTheme('normal')}>Normal</a>
+            </li>
+            <li>
+              <a href="#" onClick={()=>props.setTheme('small')}>
+                Small
+              </a>
+            </li>
             {/*<li>*/}
             {/*    <a href="features.html">Fatures</a>*/}
             {/*</li>*/}

@@ -57,9 +57,30 @@ a {
 .box .name{
   font-size: 13px;
 }
-.box .id{
+.box.normal{
+}
+.box.small{
+  width: 70px;
+  height: 70px;
+}
+.test{
+  border: 2px red solid;
+}
+.box.small{
+  width: 70px;
+  height: 70px;
+}
+.box.small .test{
+  display: none;
+}
+.box.id {
   font-size: 8px;
-}.box .mass{
+}
+p.id.small{
+  color: #0C8BFC;
+  font-size: 8px;
+}
+.box .mass{
   font-weight: bold;
 }
 
