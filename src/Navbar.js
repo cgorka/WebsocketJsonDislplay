@@ -11,7 +11,7 @@ const Navbar = (props) => {
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="#" onClick={console.log("clic3k")}>
+              <a href="#" >
                 Big
               </a>
             </li>
