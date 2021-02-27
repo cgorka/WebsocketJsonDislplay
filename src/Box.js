@@ -15,7 +15,7 @@ const Box = (props) => {
   return (
     <div
       className="box"
-      key={props.item.id}
+
       style={{ width: sizeInPx, height: sizeInPx }}
     >
       {/*<Hy10svg fill='red' stroke='white'/>*/}

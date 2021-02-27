@@ -42,9 +42,9 @@ function App() {
             if (message != null) setjsonData(message);
         };
 
-        return () => {
-            ws.close();
-        }
+        // return () => {
+        //     ws.close();
+        // }
     }, []);
 
   return (
@@ -53,7 +53,7 @@ function App() {
       {/*<WebSocketDemo setData={getMassage}></WebSocketDemo>*/}
       <div className="container">
         {jsonData.map((item) => (
-          <Box item={item[0]} ></Box>
+          <Box key={item[0].id} item={item[0]} ></Box>
         ))}
       </div>
     </>
