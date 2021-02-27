@@ -1,125 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 :root {
-  /*--first-color : #f9f7f7;*/
-  --first-color : #2A2A37;
-  --second-color : #dbe2ef;
-  --third-color: #3f72af;
+    /*--first-color : #f9f7f7;*/
+    --first-color: #2A2A37;
+    --second-color: #dbe2ef;
+    --third-color: #3f72af;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  font-family: 'lato', 'sans-serif';
-  color: white;
-  line-height: 1.6;
-background: linear-gradient(240deg, rgba(75,73,93,1) 0%, rgba(40,43,52,1) 25%)
+    font-family: 'lato', 'sans-serif';
+    color: white;
+    line-height: 1.6;
+    background: linear-gradient(240deg, rgba(75, 73, 93, 1) 0%, rgba(40, 43, 52, 1) 25%)
 }
+
+/*body {*/
+/*    font-family: 'lato', 'sans-serif';*/
+/*    color: rgba(75, 73, 93, 1);*/
+/*    line-height: 1.6;*/
+/*    !*background: linear-gradient(240deg, rgba(75, 73, 93, 1) 0%, rgba(40, 43, 52, 1) 25%)*!*/
+/*    background-color: lightgrey;*/
+/*}*/
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
+
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
 }
 
 .box {
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
-  width: 170px;
-  height: 170px;
-  padding: 10px 10px;
-  margin: 5px;
-  border-radius: 15px;
-  transition:all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    border-style: solid;
+    border-color: white ;
+    border-width: 1px;
+    width: 170px;
+    height: 170px;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    flex-grow: 0;
+    flex-shrink: 2;
 }
 
 
+.box .name {
+    font-size: 13px;
+}
 
-.box .name{
-  font-size: 13px;
+.box.normal {
 }
-.box.normal{
+
+.box.small {
+    width: 70px;
+    height: 70px;
 }
-.box.small{
-  width: 70px;
-  height: 70px;
+
+
+.box.small {
+    width: 70px;
+    height: 70px;
 }
-.test{
-  border: 2px red solid;
+
+.box.small .test {
+    display: none;
 }
-.box.small{
-  width: 70px;
-  height: 70px;
-}
-.box.small .test{
-  display: none;
-}
+
 .box.id {
-  font-size: 8px;
-}
-p.id.small{
-  color: #0C8BFC;
-  font-size: 8px;
-}
-.box .mass{
-  font-weight: bold;
+    font-size: 8px;
 }
 
-.box:active{
-  border-color: #0C8BFC;
-}
-.box:hover{
-cursor: pointer;
-  border-width: 5px;
-  height: 400px;
-  flex-grow: 3;
-  justify-content: center;
-  align-items: center;
+p.id.small {
+    color: #0C8BFC;
+    font-size: 8px;
 }
 
-.box:hover p{
-  transition:all 1.5s ease-out;
-  font-weight: bold;
-  font-size: 2rem;
+.box .mass {
+    font-weight: bold;
+}
+
+.box:active {
+    border-color: #0C8BFC;
+}
+
+.box.normal:hover {
+    cursor: pointer;
+    border-width: 5px;
+    height: 400px;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+}
+.box.small:hover {
+    cursor: pointer;
+    border-width: 2px;
+    /*height: 400px;*/
+    /*width: 50%;*/
+    /*flex-grow: 2;*/
+    /*flex: 0 0 50%;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.box.normal:hover p {
+    transition: all 1.5s ease-out;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 
-.navbar{
-  color: white;
-  height: 70px;
-  margin-right: 100px;
+.navbar {
+    /*color: white;*/
+    height: 70px;
+    margin-right: 100px;
 }
-.navbar ul{
-  display: flex;
+
+.navbar ul {
+    display: flex;
 }
-.navbar a{
-  color: white;
-  padding: 10px;
-  margin: 10px 10px;
+
+.navbar a {
+    /*color: white;*/
+    padding: 10px;
+    margin: 10px 10px;
 }
-.navbar a:hover{
-  border-bottom:4px white solid;
+
+.navbar a:hover {
+    border-bottom: 4px #0C8BFC solid;
 }
-.navbar .flex{
-  justify-content: space-between;
+
+.navbar .flex {
+    justify-content: space-between;
 }
 
