@@ -16,10 +16,10 @@ const Navbar = (props) => {
             {/*  </a>*/}
             {/*</li>*/}
             <li>
-              <a href="#" onClick={()=>props.setTheme('normal')}>Normal</a>
+              <a className={`${props.theme==='normal' ? "selected" : ""}`} href="#" onClick={()=>props.setTheme('normal')}>Normal</a>
             </li>
             <li>
-              <a href="#" onClick={()=>props.setTheme('small')}>
+              <a className={`${props.theme==='small' ? "selected" : ""}`} href="#" onClick={()=>props.setTheme('small')}>
                 Small
               </a>
             </li>

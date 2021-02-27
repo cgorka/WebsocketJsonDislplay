@@ -143,13 +143,17 @@ p.id.small {
 
 .navbar a {
     color: white;
-    padding: 10px;
+    /*padding: 10px;*/
     margin: 10px 10px;
 }
 
 .navbar a:hover {
+    /*border-bottom: 4px white solid;*/
+}
+.navbar a.selected {
     border-bottom: 4px white solid;
 }
+
 
 .navbar .flex {
     justify-content: space-between;

@@ -19,14 +19,15 @@ function App() {
         //     ws.close();
         // }
     }, []);
-    const [theme, setTheme] = useState('normal')
+    const [theme, setTheme] = useState(localStorage.getItem('_theme'))
     function setThemeFun(_theme){
         console.log('_theme: ', _theme);
+        localStorage.setItem('_theme', _theme);
         setTheme(_theme)
     }
     return (
         <>
-            <Navbar setTheme={setThemeFun} ></Navbar>
+            <Navbar theme={theme} setTheme={setThemeFun} ></Navbar>
             <div className="container">
                 {jsonData.map((item) => (
                     <Box key={item[0].id} item={item[0]} theme={theme}></Box>
