@@ -4,11 +4,11 @@ const Navbar = (props) => {
   return (
     <div className="navbar">
       <div className="container flex">
-        <h1 className="logo">RScaleManager</h1>
+        <h1 className="logo">Scale Manager</h1>
         <nav>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              {/*<a href="index.html">Home</a>*/}
             </li>
             {/*<li>*/}
             {/*  <a href="#" >*/}
