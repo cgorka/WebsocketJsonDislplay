@@ -54,7 +54,9 @@ a {
   transition:all 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
+  justify-content: center;
+  align-items: center;
 }
 
 .overrideBoxBig {
@@ -76,14 +78,19 @@ a {
  }
 .box:active{
   border-color: #0C8BFC;
-  outline: none
+  /*outline: none*/
+  /*width: 100vw;*/
+  /*height:100vh ;*/
+  /*width: 700px;*/
+  /*height:700px ;*/
 }
 .box:hover{
 cursor: pointer;
   /*border-color: #0C8BFC;*/
   border-width: 5px;
-  width: 400px;
+  /*width: 400px;*/
   height: 400px;
+  flex-grow: 3;
   justify-content: center;
   align-items: center;
 /*background-color: grey;*/
@@ -92,7 +99,7 @@ cursor: pointer;
 .box:hover p{
   /*font-style: italic;*/
   /*color: red;*/
-  transition:all 1.5s ease;
+  transition:all 1.5s ease-out;
   font-weight: bold;
   font-size: 2rem;
 }
