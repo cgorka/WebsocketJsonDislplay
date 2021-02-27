@@ -51,7 +51,7 @@ a {
   padding: 10px 10px;
   margin: 5px;
   border-radius: 15px;
-  transition:all 0.5s ;
+  transition:all 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -92,6 +92,7 @@ cursor: pointer;
 .box:hover p{
   /*font-style: italic;*/
   /*color: red;*/
+  transition:all 1.5s ease;
   font-weight: bold;
   font-size: 2rem;
 }
