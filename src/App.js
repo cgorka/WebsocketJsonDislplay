@@ -4,6 +4,8 @@ import Box from "./Box";
 import Navbar from "./Navbar";
 import {useState, useEffect} from "react";
 import fakeData from "./fakeData";
+import TestComponent from "./TestComponent";
+import Error from "./Error";
 
 function App() {
     const [jsonData, setjsonData] = useState(fakeData);
@@ -25,16 +27,24 @@ function App() {
         localStorage.setItem('_theme', _theme);
         setTheme(_theme)
     }
-    return (
-        <>
-            <Navbar theme={theme} setTheme={setThemeFun} ></Navbar>
-            <div className="container">
+    function getPage() {
+        const route = window.location.pathname;
+        console.log('route: ', route);
+        if (route === "/courses") return <TestComponent></TestComponent>;
+        if (route === "/"){
+            return <div className="container">
                 {jsonData.map((item) => (
                     <Box key={item[0].id} item={item[0]} theme={theme}></Box>
                 ))}
-            </div>
+            </div>;
+        }
+         return <Error />;
+    }
+    return (
+        <>
+            <Navbar theme={theme} setTheme={setThemeFun} ></Navbar>
+            {getPage()}
         </>
     );
 }
-
 export default App;

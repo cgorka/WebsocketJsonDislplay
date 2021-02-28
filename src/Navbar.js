@@ -8,14 +8,6 @@ const Navbar = (props) => {
         <nav>
           <ul>
             <li>
-              {/*<a href="index.html">Home</a>*/}
-            </li>
-            {/*<li>*/}
-            {/*  <a href="#" >*/}
-            {/*    Big*/}
-            {/*  </a>*/}
-            {/*</li>*/}
-            <li>
               <a className={`${props.theme==='normal' ? "selected" : ""}`} href="#" onClick={()=>props.setTheme('normal')}>Normal</a>
             </li>
             <li>
@@ -23,12 +15,6 @@ const Navbar = (props) => {
                 Small
               </a>
             </li>
-            {/*<li>*/}
-            {/*    <a href="features.html">Fatures</a>*/}
-            {/*</li>*/}
-            {/*<li>*/}
-            {/*    <a href="docs.html">Docs</a>*/}
-            {/*</li>*/}
           </ul>
         </nav>
       </div>
