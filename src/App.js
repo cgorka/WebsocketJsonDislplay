@@ -1,3 +1,5 @@
+import 'devextreme/dist/css/dx.common.css';
+import 'devextreme/dist/css/dx.light.css';
 import "./index.css";
 import React from "react";
 import Box from "./Box";
@@ -6,6 +8,7 @@ import {useState, useEffect} from "react";
 import fakeData from "./fakeData";
 import TestComponent from "./TestComponent";
 import Error from "./Error";
+import Demo from "./demo";
 
 function App() {
     const [jsonData, setjsonData] = useState(fakeData);
@@ -30,7 +33,7 @@ function App() {
     function getPage() {
         const route = window.location.pathname;
         console.log('route: ', route);
-        if (route === "/courses") return <TestComponent></TestComponent>;
+        if (route === "/test") return <Demo></Demo>
         if (route === "/"){
             return <div className="container">
                 {jsonData.map((item) => (
