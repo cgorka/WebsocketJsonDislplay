@@ -16,17 +16,14 @@
 body {
     font-family: 'lato', 'sans-serif';
     color: white;
+
     line-height: 1.6;
     background: linear-gradient(240deg, rgba(75, 73, 93, 1) 0%, rgba(40, 43, 52, 1) 25%)
 }
-
-/*body {*/
-/*    font-family: 'lato', 'sans-serif';*/
-/*    color: rgba(75, 73, 93, 1);*/
-/*    line-height: 1.6;*/
-/*    !*background: linear-gradient(240deg, rgba(75, 73, 93, 1) 0%, rgba(40, 43, 52, 1) 25%)*!*/
-/*    background-color: lightgrey;*/
-/*}*/
+#root
+{
+    /*display: flex;*/
+}
 ul {
     list-style-type: none;
 }
@@ -44,6 +41,24 @@ a {
     margin: 0 auto;
     overflow: auto;
     padding: 0 20px;
+}
+.containerFullBox {
+
+    height: 80vh;
+    width: 100%;
+    border-style: solid;
+    border-color: white ;
+    border-width: 3px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: grid;
+
+    /*flex-wrap: wrap;*/
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
+    /*margin: 0 auto;*/
+    /*overflow: auto;*/
+    /*padding: 0 20px;*/
 }
 
 .box {
@@ -153,7 +168,9 @@ p.id.small {
 .navbar a.selected {
     border-bottom: 4px white solid;
 }
-
+.logo1{
+    font-size: 25px;
+}
 
 .navbar .flex {
     justify-content: space-between;
