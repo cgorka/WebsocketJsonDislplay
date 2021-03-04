@@ -5,12 +5,14 @@ import {Link} from "react-router-dom";
 
 const Navbar = (props) => {
     const notify = () => toast("test",);
+    const { apiUrl } = window['runConfig'];
     return (
         <div className="navbar">
 
             <div className="container flex">
                 {/*<h1 className="logo">Scale Manager</h1>*/}
                 <Link className="logo1" to="/">Scale Manager</Link>
+                <div>Runtime config apiUrl: {apiUrl}</div>
                 <nav>
                     <ul>
                         <li>

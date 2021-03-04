@@ -10,6 +10,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {ToastContainer} from "react-toastify";
 import {Boxes} from "./boxes";
 import BoxFullScrean from "./BoxFullScrean";
+import configData from "./config.json"
 
 function App() {
     const ThemeContext = React.createContext('light');

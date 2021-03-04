@@ -45,13 +45,15 @@ a {
 .containerFullBox {
 
     height: 80vh;
-    width: 100%;
+    width: 97%;
     border-style: solid;
     border-color: white ;
     border-width: 3px;
     border-radius: 15px;
     transition: all 0.3s ease;
     display: grid;
+    margin: auto;
+    padding: 20px;
 
     /*flex-wrap: wrap;*/
     /*justify-content: flex-start;*/
@@ -190,8 +192,9 @@ p.id.small {
 
 
 .navbar {
+
     color: white;
-    height: 70px;
+    height: 90px;
     margin-right: 100px;
 }
 
