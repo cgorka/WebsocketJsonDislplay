@@ -1,4 +1,4 @@
-https://scale-display.web.app
+https://scaledisplay.web.app
 
-https://scale-display.rx48.eu
+https://scaledisplay.rx48.eu
 
